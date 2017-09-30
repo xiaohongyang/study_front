@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<div id="app">
+	{{ message }}
+
+	<xhy-list-item  v-bind:todo='name'></xhy-list-item>
+</div>
+
+
+<script  type="text/javascript"  > 
+
+
+Vue.component('xhy-list-item', {
+
+	props : ['todo'],
+	template : '<li> {{ todo }} </li>'
+})
+
+	
+	var myVue = new Vue({
+		el : "#app",
+		data : {
+			message : "hello world",
+			name : "jackxiao"
+		}
+	})
+
+	myVue.componen
+
+	 
+
+</script>
+
+</body>
+</html>
