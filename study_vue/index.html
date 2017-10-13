@@ -10,6 +10,8 @@
 	{{ message }}
 
 	<xhy-list-item  v-bind:todo='name'></xhy-list-item>
+
+	<xhy-list-item v-for="item in student" v-bind:todo='item.name'></xhy-list-item>
 </div>
 
 
@@ -27,7 +29,13 @@ Vue.component('xhy-list-item', {
 		el : "#app",
 		data : {
 			message : "hello world",
-			name : "jackxiao"
+			name : "jackxiazzddo",
+			student : [
+				{name:'jack'},
+				{name:'bluce'},
+				{name:'lucy'},
+				{name:'lucy22'},
+			]
 		}
 	})
 

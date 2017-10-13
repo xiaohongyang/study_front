@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		DIV#MainPromotionBanner {
+			MARGIN: 0px auto; WIDTH: 930px; HEIGHT: 143px
+		}
+		#MainPromotionBanner #SlidePlayer {
+			POSITION: relative; MARGIN: 0px 0px;
+		}
+		#MainPromotionBanner .Slides {
+			PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 143px; OVERFLOW: hidden; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+		}
+		#MainPromotionBanner .Slides LI {
+			WIDTH:930px; FLOAT: left; HEIGHT: 143px
+		}
+		#MainPromotionBanner .Slides IMG {
+			BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 930px; DISPLAY: block; HEIGHT: 143px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+		}
+		#MainPromotionBanner .SlideTriggers {
+			Z-INDEX: 10; POSITION: absolute; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 80px; PADDING-RIGHT: 0px; HEIGHT: 25px; TOP: 122px; RIGHT: 10px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+		}
+		#MainPromotionBanner .SlideTriggers LI {
+			TEXT-ALIGN: center; LINE-HEIGHT: 16px; MARGIN: 0px 3px; WIDTH: 16px; DISPLAY: inline; FONT-FAMILY: Arial; BACKGROUND: url(/images/slide_trigger.gif) no-repeat center center; FLOAT: left; HEIGHT: 16px; COLOR: #333; FONT-SIZE: 0.9em; OVERFLOW: hidden; CURSOR: pointer
+		}
+		#MainPromotionBanner .SlideTriggers LI.Current {
+			BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 16px; MARGIN: 0px 3px; WIDTH: 16px; BACKGROUND: url(/images/slide_trigger_c.gif) no-repeat center center; HEIGHT: 16px; COLOR: #c80506; FONT-SIZE: 1.1em; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+		}
+
+	</style>
+</head>
+<body>
+
+
+
+<div class="slider " id="MainPromotionBanner"> 
+	
+	<div id="SlidePlayer">
+            <ul class="Slides">
+          <li><a href="#" target="_blank">
+          <img class='img-responsive' border="0" alt="" src="http://image.youzhan.org/3/af/2693eb70cb7f2fd18e70dd70ffd3a.png!thumb">
+          </a></li>
+          <li><a href="#">
+          <img class='img-responsive' border="0" alt="#" src="http://www.ysgxf.com/image/img_74.jpg">
+          </a></li>
+          <li><a href="#">
+          <img class='img-responsive' border="0" alt="" src="http://www.ysgxf.com/image/img_75.jpg"></a>
+          </li></ul>
+   <ul class="SlideTriggers"><li class="">1</li><li class="Current">2</li><li class="">3</li></ul></div>	
+</div>
+
+
+
+
+
+ 
+<script type="text/javascript" src='js/tb_slide.js'> </script>
+
+
+<script type="text/javascript">
+	TB.widget.SimpleSlide.decoration('SlidePlayer', {eventType:'mouse', effect:'scroll'});
+</script>
+
+
+</body>
+</html>
