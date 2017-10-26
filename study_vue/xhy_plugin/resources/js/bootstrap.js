@@ -20,8 +20,11 @@ require('bootstrap-sass');
 // 
 window.Vue = require('vue');
 
-window.axios = require('axios');
+window.axios = require('axios'); 
 
+Vue.component('xhy_form_list', require('../components/xhy_plugin/xhy_form_list.vue'))
+
+Vue.component('xhy_modal', require('../components/xhy_plugin/xhy_modal.vue')) 
 
 
 // import Ueditor from './components/Ueditor.vue' 

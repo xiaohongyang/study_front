@@ -1,8 +1,8 @@
 <template>
-	<li>{{content}}</li>
+			<li>{{content}}</li>
 </template>
 <script>
-module.exports = {
+export default {
 	data : function() {
 		return {
 			content : 'hello world'

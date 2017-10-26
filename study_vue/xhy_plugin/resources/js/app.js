@@ -14,4 +14,3 @@ const vue = new Vue({
 
 
 
-Vue.component('xhy_form_list', require('../components/xhy_plugin/xhy_form_list.vue'))
