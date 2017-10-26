@@ -5,29 +5,35 @@
 	<link href="public/css/app.css" rel='stylesheet' type="text/css" />
 </head>
 <body>
-
-
-
+ 
 
 <div id="app" class='container'>
 	<canvas id="ID">Your Browser does not support Canvas, please upgrade</canvas>
 
-	<xhy_form_list></xhy_form_list>
-
+	 
 	<div class='row'>
 		<div class="col-md-12">
 			col-md-12
 		</div>
 	</div> 
 
-	<xhy_modal >
+	xxvvv 
+
+
+	<xhy-modal v-bind:default-is-show=1>
 	    <!--
 	      you can use custom content here to overwrite
 	      default content
 	    -->
-	    <h3 slot="header">custom header</h3>
-	  </xhy_modal>
+    	<h3 slot="header">custom header</h3>
+  	</xhy-modal>
+
+
+   
 </div>
+
+
+
 
 
 <script	src="public/js/app.js"></script>

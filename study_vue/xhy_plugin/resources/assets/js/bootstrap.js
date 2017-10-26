@@ -22,9 +22,18 @@ window.Vue = require('vue');
 
 window.axios = require('axios'); 
 
-Vue.component('xhy_form_list', require('../components/xhy_plugin/xhy_form_list.vue'))
+import GlobalConfig from './components/GlobalConfig.js'
 
-Vue.component('xhy_modal', require('../components/xhy_plugin/xhy_modal.vue')) 
+Vue.use(GlobalConfig)
+
+import {xhyModal} from './index.js'
+
+
+Vue.component('xhy-modal', xhyModal);
+
+
+
+
 
 
 // import Ueditor from './components/Ueditor.vue' 
