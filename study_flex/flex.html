@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 布局</title>
+
+    <style type="text/css">
+
+        .flex{
+            display: flex;
+        }
+        .center_h_and_v{
+            justify-content: center;
+            flex-direction: column;
+            flex-flow: row nowrap;
+            background: #eee;
+            flex-start: right;
+        }
+
+        body{
+            background: #eee;
+        }
+        .code{
+            text-indent :2em;
+            background: #ccc;
+        }
+        .ex{
+            display: flex;
+            background: #fff;
+        }
+        .bg-yellow{
+            background: #ff0;
+        }
+        .ex .box{
+            width:100px; height: 100px;
+        }
+        .m-10{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>
+    1. flex-direction 主轴的方向
+</h3>
+<div class="code">
+    .box{ flex-direction: row | row-reverse | column | column-reverse }
+</div>
+<div class="ex" style="flex-direction: row-reverse; ">
+    <div class="box bg-yellow m-10  " >01</div>
+    <div class="box bg-yellow m-10">02</div>
+    <div class="box bg-yellow m-10">03</div>
+    <div class="box bg-yellow m-10">04</div>
+    <div class="box bg-yellow m-10">05 flex-direction: row-reverse</div>
+</div>
+
+<h3>
+    2. flex-wrap 如果一条轴线排不下，是否换行
+</h3>
+<div class="code">
+    .box{ flex-wrap: wrap|wrap-reverse|no-wrap }
+</div>
+<div class="ex" style="flex-wrap: wrap">
+    <div class="box bg-yellow m-10">1</div>
+    <div class="box bg-yellow m-10">2</div>
+    <div class="box bg-yellow m-10">3</div>
+    <div class="box bg-yellow m-10">4</div>
+    <div class="box bg-yellow m-10">5</div>
+</div>
+
+<h3>
+    3. flex-flow 是flex-direction和flex-wrap的科室
+</h3>
+<div class="code">
+    .box { flex-flow: {flex-direction} || {flex-wrap} }
+</div>
+<div class="ex">
+    <div class="ex" style="flex-flow: row-reverse wrap-reverse">
+        <div class="box bg-yellow m-10">1</div>
+        <div class="box bg-yellow m-10">2</div>
+        <div class="box bg-yellow m-10">3</div>
+        <div class="box bg-yellow m-10">4</div>
+        <div class="box bg-yellow m-10">5</div>
+    </div>
+</div>
+
+<h3>
+    4. justify-content 主轴方向内容对齐方式
+</h3>
+<div class="code">
+    .box { justify-content : flex-start | flex-end | center | space-between | space-around}
+</div>
+<div class="ex" style="justify-content : flex-end">
+    <div class="box bg-yellow m-10">1</div>
+    <div class="box bg-yellow m-10">2</div>
+    <div class="box bg-yellow m-10">3</div>
+    <div class="box bg-yellow m-10">4</div>
+    <div class="box bg-yellow m-10">5</div>
+</div>
+
+</body>
+</html>
